@@ -1,0 +1,1 @@
+total_bill,size,day_Fri,day_Sat,day_Sun,time_Dinner
