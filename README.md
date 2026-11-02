@@ -90,3 +90,30 @@ streamlit run app.py
 # Día 25 - API (próximo)
 uvicorn api:app --reload
 ```
+# 💰 Análisis de Propinas - Modelo Ganador R² 0.4675
+
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Scikit-Learn](https://img.shields.io/badge/Sklearn-1.9.0-orange)
+![R2](https://img.shields.io/badge/R2-0.4675-green)
+![Tests](https://img.shields.io/badge/pytest-3%20passed-brightgreen)
+![Docker](https://img.shields.io/badge/Docker-luisemiro%2Fapi--propinas-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-deployed-red)
+
+Proyecto de 33 días: de `pd.read_csv` a 3 apps en producción con modelo de regresión de propinas.
+
+## 🚀 Deploys en Vivo
+
+- **🔮 Predictor:** https://predecir-propinas-luis.streamlit.app/
+    - Input: $20, 2 personas, Fri, Dinner → $2.97
+  
+- **📊 Dashboard:** https://dashboard-propinas-luis.streamlit.app/
+    - 4 predicciones guardadas
+    - Propina promedio $2.97 | Ticket $20.00 | R² 0.4675
+    - Gráficos Plotly: Propinas por Día y Cuenta vs Propina
+
+- **🐳 API Docker:** `luisemiro/api-propinas`
+  ```bash
+  docker pull luisemiro/api-propinas
+  docker run -p 8000:8000 luisemiro/api-propinas
+  # Docs: http://127.0.0.1:8000/docs
+  # POST /predict -> {"propina_estimada": 2.97}
