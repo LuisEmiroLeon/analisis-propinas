@@ -117,3 +117,5 @@ Proyecto de 33 días: de `pd.read_csv` a 3 apps en producción con modelo de reg
   docker run -p 8000:8000 luisemiro/api-propinas
   # Docs: http://127.0.0.1:8000/docs
   # POST /predict -> {"propina_estimada": 2.97}
+
+  Video demo: https://www.loom.com/share/1af9012d52144c2dbee5a754ff1e26db
